@@ -11,9 +11,9 @@ public class day1 {
 	private static void readFileAndCopyToList() throws IOException {
 		try {
 			nums = new ArrayList<Integer>();
-			BufferedReader br = new BufferedReader(new FileReader("input.txt"));
+			BufferedReader reader = new BufferedReader(new FileReader("day-1-input.txt"));
 			while (true) {
-				String line = br.readLine();
+				String line = reader.readLine();
 				if (line == null)
 					break;
 				nums.add(Integer.parseInt(line));
